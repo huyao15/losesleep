@@ -21,6 +21,73 @@
     <style name="page_title">
         <item name="android:paddingTop">15dp</item>
         <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="layout_hello"></style>
+
+    <style name="slogan_night">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="topicList">
+        <item name="android:background">@color/color_grey_background</item>
+    </style>
+
+    <style name="topic_container">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="topic_main">
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+    <style name="topic_date">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="topic_date_corner">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="openDay">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="openMonth">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="subject">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="viewAction" parent="subject">
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="viewDetail" parent="subject">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_grey_border</item>
     </style>
 
 </resources>

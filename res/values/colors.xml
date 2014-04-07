@@ -1,5 +1,14 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
+    <color name="color_title">#0099CC</color>
+    
+    <color name="day_color_other">#66000000</color>
+    <color name="day_color_first">#0099CC</color>
+    
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_grey_background">#EEEEEE</color>
+    <color name="color_grey_border">#BBBBBB</color>
+    <color name="color_black">#222222</color>
 
 </resources>
