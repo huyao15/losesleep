@@ -10,14 +10,17 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.xianglanqi.losesleep.R;
+import com.xianglanqi.losesleep.TopicActivity;
 import com.xianglanqi.losesleep.model.Topic;
 import com.xianglanqi.losesleep.util.DateUtil;
 import com.xianglanqi.losesleep.util.HttpUtil;
@@ -111,6 +114,16 @@ public class TopicAdapter extends BaseAdapter {
         }
 
         final Topic topic = this.topics.get(pos);
+        convertView.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, TopicActivity.class);
+                intent.putExtra("topic", topic);
+                context.startActivity(intent);
+            }
+        });
+
         holder.openDay.setText(DateUtil.getDayString(topic.getOpenDate()));
         holder.openMonth.setText(DateUtil.getMonthString(topic.getOpenDate()));
         if (pos == 0) {

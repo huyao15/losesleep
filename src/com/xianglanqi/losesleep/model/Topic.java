@@ -1,11 +1,13 @@
 package com.xianglanqi.losesleep.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.json.JSONObject;
 
-public class Topic {
+public class Topic implements Serializable {
 
+    private static final long serialVersionUID = 4905456059488255788L;
     private long id;
     private String subject;
     private Date addTime;

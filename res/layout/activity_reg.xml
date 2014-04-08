@@ -1,15 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/layout_hello"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#50000000" >
+    android:background="@color/color_grey_background" >
 
-    <TextView
-        style="@style/slogan_night"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/slogan_night" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingTop="100dp" >
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintNickName" />
+
+        <RadioGroup
+            android:id="@+id/userGender"
+            style="@style/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/userGenderBoy"
+                style="@style/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/genderBoy" />
+
+            <RadioButton
+                android:id="@+id/userGenderGirl"
+                style="@style/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genderGirl" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/regAction"
+            style="@style/regAction"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="@string/regAction" />
+    </LinearLayout>
 
 </RelativeLayout>

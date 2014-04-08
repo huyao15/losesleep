@@ -4,5 +4,9 @@
     <string name="app_name">失眠岛</string>
     <string name="slogan_night">这里满是寂寞，请不要常来</string>
     <string name="viewAction"></string>
+    <string name="genderBoy">男</string>
+    <string name="genderGirl">女</string>
+    <string name="hintNickName">昵称</string>
+    <string name="regAction">登岛</string>
 
 </resources>
